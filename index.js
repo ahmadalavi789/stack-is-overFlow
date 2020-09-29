@@ -14,6 +14,9 @@ function stack(initialSize = 10) {
   stack.prototype.pop = function(){    
     return this.items[--this.index];
   }
+  stack.prototype.pushArry = function(val){
+    return this.push(val)
+  }
   
   
   module.exports = stack
